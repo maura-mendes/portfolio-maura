@@ -1,0 +1,19 @@
+.footer-container{
+	background: #273746;
+	height: 45px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	.rights-sereved-section{
+		p{
+			font-family: Saira;
+			font-style: normal;
+			font-weight: lighter;
+			font-size: 13px;
+			line-height: 22px;
+			text-align: center;
+			color: rgba(255, 255, 255, 0.9);
+			margin: 0;
+		}
+	}
+}

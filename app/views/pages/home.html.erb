@@ -23,31 +23,36 @@
 		
 	</div>
 </section>
-<section class="about-me-wrapper">
+<section class="about-me-wrapper" id="about-me">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-3">
-				<div class="avatar-container">
-					<div class="avatar">
+			<div class="col-xs-12 col-sm-10 offset-sm-1">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3">
+						<div class="avatar-container">
+							<div class="avatar">
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-9">
+						<div class="description-container">
+							<h2>ABOUT ME</h2>
+							<p>Hi, I'm Maura!  I'm a junior full stack web developer based in Paris, skilled in Ruby on Rails  stack, but curious about and happy to explore other programming technologies. <br>
+
+							I've graduated from Lewagom in Lisbon( 9 weeks intensive web development bootcamp), where I had a chance of not only learning full stack technologies, but also team programming, best practices and test driven development. <br>
+
+							I'm a native Portuguese language speaker,  fluent in English, with French language skills on an intermediate level. <br>
+
+							Currently I'm looking for full stack,  backend or frontend job opportunity in Paris.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-9">
-				<div class="description-container">
-					<h2>ABOUT ME</h2>
-					<p>Hi, I'm Maura!  I'm a junior full stack web developer based in Paris, skilled in Ruby on Rails  stack, but curious about and happy to explore other programming technologies. <br>
-
-					I've graduated from Lewagom in Lisbon( 9 weeks intensive web development bootcamp), where I had a chance of not only learning full stack technologies, but also team programming, best practices and test driven development. <br>
-
-					I'm a native Portuguese language speaker,  fluent in English, with French language skills on an intermediate level. <br>
-
-					Currently I'm looking for full stack,  backend or frontend job opportunity in Paris.</p>
-				</div>
-			</div>
 		</div>
+		
 	</div>
 </section>
-<section class="skills-wrapper">
+<section class="skills-wrapper" id="my-skills">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-10 offset-sm-1">
@@ -199,7 +204,7 @@
 		</div>
 	</div>
 </section>
-<section class="my-projects-wrapper">
+<section class="my-projects-wrapper" id="my-projects">
 	<div class="projects-inner-container">
 		<div class="container">
 			<h2> <i class="fas fa-laptop-code"></i> WHAT I’VE BUILT SO FAR:</h2>
@@ -347,27 +352,114 @@
 		</div>
 	</div>
 </section>
-<section class="education-wrapper">
+<section class="education-wrapper" id="my-education">
 	<div class="container">
 		<h2> <i class="fas fa-graduation-cap"></i>EDUCATION</h2>
+
 		<div class="row">
-			<div class="col-sm-3">
-				<div class="dates">
-					<h3>Jan - Mar 2018</h3>
+			<div class="col-xs-12 col-sm-10 offset-sm-1">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="dates-container">
+							<div class="dates">
+								<h3>Jan - Mar 2018</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<div class="course-description-container">
+							<div class="course-description">
+								<div>
+									<h3>FULL STACK WEB DEVELOPER</h3>
+									<h4>LE WAGOM - Lisbon, PT</h4>
+									<p>Training in Ruby, Ruby on Rails, Javascript, SQL, HTML, CSS, Jquery, Git, Github, Heroku(and other technologies)</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				
-			</div>
-			<div class="col-sm-9">
-				<div class="course-description-container">
-					<h3>FULL STACK WEB DEVELOPER</h3>
-					<h4>LE WAGOM - Lisbon, PT</h4>
-					<p>Formation en Ruby, Ruby on Rails, Javascript, SQL</p>	
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="dates-container">
+							<div class="dates">
+								<h3>2007 - 2010</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<div class="course-description-container">
+							<div class="course-description">
+								<div>
+									<h3>FBSC IN MANAGEMENT</h3>
+									<h4>USTM - Mozambique</h4>
+									<p>Training in business management and development</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
 </section>
+<section class="contact-form-wrapper" id="my-contact-details">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 offset-sm-3">
+				<div class="social-network-contacts">		
+					<div class="social-net-container">
+							<h2>Get in Touch</h2>
+							<div class="title-border"></div>
+						<%= link_to "https://www.linkedin.com/in/maurabaptista/", class: "icon-border-blue" do %>
+							<i class="fab fa-linkedin-in"></i>	
+						<% end %>
+						<%= link_to "https://github.com/maura-baptista", class: "" do %>
+						  <i class="fab fa-github"></i>
+						<% end %>
+
+						<%= link_to "https://www.facebook.com/maura.mendes.54", class: "icon-border-dark-blue" do %>
+							<i class="fab fa-facebook-f"></i>
+						<% end %>
+					</div>
+				</div>
+				<div class="contact-form-container">
+					<div class="form-box">
+						<%= simple_form_for @contact do |f| %>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12">	
+								<%= f.input :name, as: :string, required: true, label: false,  placeholder: "Your name *", input_html: { class: 'input-lg' } %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12">
+								<%= f.input :email, as: :email,  label: false, required: true, placeholder: ' Your email *' %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12">
+								<%= f.input :message, as: :text, input_html: { class: 'message-input' }, required: true, label: false,  placeholder: "Your message *" %>
+							</div>
+						</div>
+						<div class="row hidden">
+							<div class="col-xs-12 col-sm-12">
+								<%= f.input :nickname, hint: 'leave this field blank' %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12">
+								<div class="form-btn-box">
+									<%= f.submit "Send", class: "btn btn-form-submit"  %>
+								</div>
+							</div>
+						</div>
+						<% end %>
+					</div>	
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>	
 
 
 

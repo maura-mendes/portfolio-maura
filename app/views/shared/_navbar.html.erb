@@ -11,25 +11,25 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <%= link_to "Home", "#", class: "nav-link" %>
+        <%= link_to "Home", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "About me", "#", class: "nav-link" %>
+        <%= link_to "About me", root_path( :anchor => "about-me"), class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Skills", "#", class: "nav-link" %>
+        <%= link_to "Skills", root_path( :anchor => "my-skills"), class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "My projects", "#", class: "nav-link" %>
+        <%= link_to "My projects", root_path( :anchor => "my-projects"), class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Education", "#", class: "nav-link" %>
+        <%= link_to "Education", root_path( :anchor => "my-education"), class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Interests", "#", class: "nav-link" %>
+        <%= link_to "Interests", root_path( :anchor => "my-interes"), class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Contact", "#", class: "nav-link" %>
+        <%= link_to "Contact", root_path( :anchor => "my-contact-details"), class: "nav-link" %>
       </li>
      <!--  <li class="nav-item dropdown">
         <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>

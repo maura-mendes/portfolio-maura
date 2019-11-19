@@ -3,6 +3,9 @@
   background: #273746;
   justify-content: flex-end;
   height: 75px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 .navbar-lewagon .navbar-collapse {

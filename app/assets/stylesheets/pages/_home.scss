@@ -494,58 +494,259 @@
 		line-height: 36px;
 		text-align: center;
 		color: #008489;
+		margin-bottom: 27px;
 	}
 	i{
 		font-size: 27px;
 		margin-right: 8px;
+		color: white
 	}
-	.dates{
+	.dates-container{
+		border-right: 2px solid #008489;
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		color: #fff;
-	    background: #008489;
-	    width: 150px;
-	    height: 150px;
-	    padding: 40px 0 40px 0;
-	    border-radius: 50%;
-	    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
-	    border-right: 1px solid #008489;
-	    h3{
-	    	font-family: Muli;
-	    	font-style: normal;
-	    	font-weight: 400;
-	    	font-size: 18px;
-	    	line-height: 23px;
-	    	text-align: center;
+		justify-content: flex-end;
+		padding-right: 23px;
+		padding-bottom: 40px;
+		.dates{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			color: #fff;
+		    background: #008489;
+		    width: 150px;
+		    height: 150px;
+		    padding: 40px 0 40px 0;
+		    border-radius: 50%;
+		    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+		    border-right: 1px solid #008489;
+		    // margin-right: 20px;
+		    h3{
+		    	font-family: Muli;
+		    	font-style: normal;
+		    	font-weight: 400;
+		    	font-size: 17px;
+		    	line-height: 23px;
+		    	text-align: center;
 
-	    	color: #FFFFFF;
-	    }
+		    	color: #FFFFFF;
+		    }
+		}
 	}
+	
 	.course-description-container{
-		width: auto;
-		background: white;
-		border-bottom: solid 4px #eeeeee;
-		padding: 22px 47px 6px 47px;
-		margin-left: 15px;
-		text-align: left;
-		border-radius: 12px;
-	}
-	.course-description-container:before{
-		content: ' ';
-		height: 25px;
-		width:25px;
-		position: absolute;
-		left: 22px;
-    	top: 30px;
-		background-color: white;
-		transform: rotate(45deg);
+		padding-left: 10px;
+		.course-description{
+			width: auto;
+			background: white;
+			
+			padding: 22px 47px 6px 47px;
+			// margin-left: 15px;
+			text-align: left;
+			border-radius: 12px;
+			// display: flex;
+		 //    align-items: center;
+		 //    justify-content: space-around;
+		    height: 150px;
 		
+			h3{
+
+				font-family: Saira;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 19px;
+				line-height: 31px;
+				color: #343B4C;
+			}
+			h4{
+				font-family: Saira;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 17px;
+				line-height: 28px;
+				color: rgba(52, 59, 76, 0.88);
+				margin-top: -4px;
+			}
+			p{
+				font-family: Muli;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 15px;
+				line-height: 20px;
+				color: rgba(52, 59, 76, 0.79);
+				margin-top: -4px;
+			}
+
+		}
+		.course-description:before{
+			content: ' ';
+			height: 25px;
+			width:25px;
+			position: absolute;
+			left: 15px;
+	    	top: 53px;
+			background-color: white;
+			transform: rotate(45deg);
+		}
 	}
 }
 
+.contact-form-wrapper{
+	padding: 50px 0;
+	background: white;
+	.contact-form-container{
+		h2{
+			font-family: Muli;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 39px;
+			text-align: center;
+			color: #08112A;
+		}
+		.title-border{
+			border: 1.5px solid #008489;
+		    width: 62px;
+		    position: absolute;
+		    left: 45%;
+		}
+		.form-box{
+			background: #08112A;
+			padding: 40px 40px;
+			margin-top: 26px;
+			border-radius: 3px;
+			form{
+				.hidden{
+					display: none;
+				}
+				input{
+					background: #FFFFFF;
+					border-radius: 3px;
+
+				}
+				.btn-form-submit{
+					background: #008489;
+					border-radius: 4px;
+					width: 100%;
+					font-family: Saira;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 17px;
+					line-height: 28px;
+					text-align: center;
+					color: #FFFFFF;
+					height: 37px;
+				}
+				.form-control{
+					height: 37px;
+					margin-top: 10px;
+					border: none;
+				}
+				::placeholder{
+					font-family: Saira;
+					font-style: normal;
+					font-weight: lighter;
+					font-size: 16px;
+					line-height: 25px;
+					color: rgba(0, 0, 0, 0.8);
+				}
+			}
+			.message-input{
+				height: 120px !important;
+			}
+		}
+	}
+	.social-network-contacts{
+		    display: flex;
+    		justify-content: space-around;
+		.social-net-container{
+			h2{
+				font-family: Muli;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 39px;
+				text-align: center;
+				color: #08112A;
+			}
+			.title-border{
+				border: 1.5px solid #008489;
+			    width: 62px;
+			    position: absolute;
+			    left: 45%;
+			}
+			a{
+			    display: inline-block;
+			    height: 2.8rem;
+			    width: 2.8rem;
+			    background-color: #171312;
+			    color: #fff !important;
+			    border-radius: 100%;
+			    text-align: center;
+			    font-size: 1.1rem;
+			    line-height: 2.8rem;
+			    margin-right: 0.5rem;
+			    
+				
+			}
+		    .icon-border-blue{
+				background-color: #007bb5;
+				margin-top: 34px;
+		    }
+		    .icon-border-dark-blue{
+		    	background-color: #39569F;
+		    }
 
 
+
+		}
+	}
+}
+
+.hidden-wrapper{
+	height: 75px;
+}
+
+.wrapper-thank-you-message{
+	background: #F9F9F9;
+	padding: 73px 0;
+	height: 100vh;
+	.message-container{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.message-description{
+			text-align: center;
+			background-color: white;
+			box-shadow: 0 4px 2px -2px gray;
+			box-shadow: 0 5px 13px -1px grey;
+   			// box-shadow: 5px 10px 8px #888888;
+   			padding: 28px 35px;
+			.icon{
+				padding-top: 50px;
+				i{
+					color: #44c400;
+					font-size: 100px;
+
+				}
+			}
+			h1{
+				font-family: Roboto;
+				color: rgba(24, 24, 24, 0.8);
+				font-weight: 500;
+				font-size: 46px;
+			}
+			p{
+				font-family: Open Sans;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 17px;
+				line-height: 23px;
+				color: rgba(0, 0, 0, 0.65);
+
+			}
+		}
+	}
+}
 
 
 
