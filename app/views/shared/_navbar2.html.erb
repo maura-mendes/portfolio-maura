@@ -1,0 +1,160 @@
+
+  <div class="navbar-wagon">
+  <!-- Logo -->
+      <%#= link_to root_path, class: "navbar-wagon-brand navbar-wagon-right hidden-md hidden-lg" do %>
+        <%#= image_tag "logo.png", height: 50 %>
+      <%# end %>
+     <!--  <p><span class= "hidden-xs hidden-sm">Rua do M3, Xai-Xai |m3restaurant.barlounge@gmail.com</span></p> -->
+
+  <!-- Right Navigation -->
+    <div class="navbar-wagon-right d-none d-sm-block">
+
+    <%# if user_signed_in? %>
+
+      <!-- Links when logged in -->
+        
+        <%= link_to "Home", root_path,  class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "About me", root_path( :anchor => "about-me"),  class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Skills", root_path( :anchor => "my-skills"),  class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "My projects", root_path( :anchor => "my-projects"),  class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Education", root_path( :anchor => "my-education"),  class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Interests", root_path( :anchor => "my-interes"),  class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Contact", root_path( :anchor => "my-contact-details"),  class: "navbar-wagon-item navbar-wagon-link" %>
+        
+        
+      
+
+      <!-- Avatar with dropdown menu -->
+      <!-- <div class="navbar-wagon-item">
+        <div class="dropdown">
+          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li>
+              <%= link_to "#" do %>
+                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+              <% end %>
+            </li>
+            <li>
+              <%#= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+              <%# end %>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+    <%# else %>
+      <!-- Login link (when logged out) -->
+      <%#= link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
+       <!--  <i class="fab fa-facebook-square facebook"></i>  -->
+      <%# end %> 
+<!--       <%#= link_to "EN", "#", class: "active nav-icons navbar-wagon-link" %>|<%#= link_to "PT", "#", class: "language-pt navbar-wagon-link" %>
+ -->      <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%# end %>
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-wagon-item d-sm-none d-md-none d-lg-none">
+    
+      
+      
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><%#= link_to "About us", root_path( :anchor => "section-about-us"), class: "navbar-item-left avbar-wagon-item navbar-wagon-link"  %>
+            <%= link_to "Home", root_path, class: "nav-link" %>
+          </li>
+          <li><%#= link_to "Rooms", rooms_list_path, class: "avbar-wagon-item navbar-wagon-link"  %>
+            <%= link_to "About me", root_path( :anchor => "about-me"), class: "nav-link" %>
+          </li>
+          <li><%#= link_to "Gallery",  gallery_path, class: "avbar-wagon-item navbar-wagon-link" %>
+            <%= link_to "Skills", root_path( :anchor => "my-skills"), class: "nav-link" %>
+          </li>
+          <li><%#= link_to "Accommodation", accommodation_path, class: "avbar-wagon-item navbar-wagon-link"  %>
+            <%= link_to "My projects", root_path( :anchor => "my-projects"), class: "nav-link" %>
+          </li> 
+          <li><%= link_to "Education", root_path( :anchor => "my-education"), class: "nav-link" %> </li>
+          <li><%= link_to "Interests", root_path( :anchor => "my-interes"), class: "nav-link" %></li>
+          <li><%= link_to "Contact", root_path( :anchor => "my-contact-details"), class: "nav-link" %></li>
+        </ul>
+    </div>
+   
+    
+  </div>
+  <!-- <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown-flex">
+      <div class="language">
+        <%#= link_to "EN", "#", class: "active nav-icons navbar-wagon-link" %>|<%#= link_to "PT", "#", class: "language-pt navbar-wagon-link" %>
+      </div>
+      
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><%#= link_to "About us", root_path( :anchor => "section-about-us"), class: "navbar-item-left avbar-wagon-item navbar-wagon-link"  %></li>
+          <li><%#= link_to "Rooms", rooms_list_path, class: "avbar-wagon-item navbar-wagon-link"  %></li>
+          <li><%#= link_to "Gallery",  gallery_path, class: "avbar-wagon-item navbar-wagon-link" %></li>
+          <li><%#= link_to "Accommodation", accommodation_path, class: "avbar-wagon-item navbar-wagon-link"  %></li> 
+          <li><%#= link_to "Restaurant&Pub", restaurant_path, class: "avbar-wagon-item navbar-wagon-link"  %> </li>
+          <li><%#= link_to "Contact",  new_contact_path ,class: "navbar-item-right avbar-wagon-item navbar-wagon-link"  %></li>
+        <%# if user_signed_in? %>
+      <li><%#= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out"></i>  <%#= t(".sign_out", default: "Log out") %>
+            <%# end %>
+          </li>
+        <%# else %>          
+        <li><%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+        <%# end %>   
+      </li>
+      </ul>
+    </div>
+    </div>
+    
+  </div> -->
+</div>
+
+
+  <!-- <div class="navbar-large hidden-xs hidden-sm">
+    <div class="container">
+      <div class="navbar-links hidden-xs hidden-sm">
+
+        <%#= link_to "Accommodation", accommodation_path, class: "avbar-wagon-item navbar-wagon-link"  %>
+        
+          <%#= link_to "About us", root_path( :anchor => "section-about-us"), class: "navbar-item-left avbar-wagon-item navbar-wagon-link"  %>
+          <%#= link_to "Rooms", rooms_list_path, class: "avbar-wagon-item navbar-wagon-link"  %>
+          
+
+          
+           <%#= link_to root_path, class: "logo" do %>
+              <%#= image_tag "logo.png", height: 60 %>
+            <%# end %>
+      
+          <%#= link_to "Gallery",  gallery_path, class: "avbar-wagon-item navbar-wagon-link" %>
+
+          <%#= link_to "Contact",  new_contact_path ,class: "navbar-item-right avbar-wagon-item navbar-wagon-link"  %> 
+          <%#= link_to "Restaurant&Bar", restaurant_path, class: "avbar-wagon-item navbar-wagon-link"  %>          
+      </div>    
+    </div>    
+  </div>   -->
+
+ 
+
+<!-- <div class="navbar-mini hidden-xs hidden-sm">
+    <div class="container">
+      <div class="nav-flexbox">
+        <p>Rua do Miau Miau, Xai-Xai |hello@m3village.com</p>
+        <div class="nav-icons">          
+          <%= link_to "EN", "#", class: "active" %>|<%= link_to "PT", "#" %>
+        
+          <%= link_to "#" do %>
+              <i class="fab fa-facebook-square"></i> 
+          <% end %> 
+          <%= link_to "Login", "#" %>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+  
+
+
+
+
