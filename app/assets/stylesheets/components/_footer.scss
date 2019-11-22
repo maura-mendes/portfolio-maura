@@ -17,3 +17,26 @@
 		}
 	}
 }
+
+@media only screen 
+  and (max-width: 320px){
+    .footer-container{
+    	.rights-sereved-section{
+			p{
+				font-size: 12px;
+			}
+    	}
+    }
+}
+
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+    .footer-container{
+  	    .rights-sereved-section{
+			p{
+				font-size: 12px;
+			}
+  		}
+    }
+}
