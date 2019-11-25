@@ -1327,7 +1327,149 @@
 	}
 }
 
+@media only screen 
+and (min-width: 768px)
+and (max-width: 990px){
+	.banner{
+		.banner-content{
+			height: 50vh;
+			padding-left: 7%;
+			.banner-header{
+				h1{
+					font-size: 27px;
+					line-height: 53px;
+				}
+				p{
+					font-size: 16px;
+    				line-height: 20px;
 
+				}
+			}
+			.social-network-icons a{
+				height: 2.4rem;
+				width: 2.4rem;
+				line-height: 2.4rem;
+			}
+		}
+		.banner-hero{
+			height: 55vh;
+		}
+	} 
+	.about-me-wrapper {
+		padding: 46px 0;
+		.avatar-container{
+			.avatar{
+				height: 130px;
+				width: 130px;
+				border: 6px solid #535F6B;
+			}
+		}
+		.description-container{
+			h2{
+				font-size: 18px;
+			}
+			p{
+				font-size: 15px;
+			}
+		}
+	}
+	.skills-wrapper{
+		padding: 55px 0;
+		padding-bottom: 22px;
+	}
+	.skills-wrapper .section-title{
+		font-size: 20px;
+	}
+	.other-skills-wrapper {
+		.languages {
+			padding: 39px 24px;
+			h2{
+				margin-bottom: 6px;
+			}
+			.languages-list {
+				ul li {
+					font-size: 15px;
+				}
+			}
+			
+		}
+		.personal-skills{
+			padding: 39px 24px;
+			 .personal-skills-list {
+			 	ul li {
+			 		font-size: 15px;
+			 	}
+			 }
+			
+		}
+	}
+	.education-wrapper{
+		.dates-container{
+			padding-right: 12px;
+			.dates{
+				width: 120px;
+				height: 120px;
+				h3{
+					font-size: 13px;
+				}
+			}
+		}
+		.course-description-container {
+			.course-description{
+				    padding: 22px 28px 6px 28px;
+				h3{
+					font-size: 17px;
+					margin-bottom: 0px;
+				}
+				h4{
+					font-size: 15px;
+					margin-bottom: 3px;
+				}
+				p{
+					font-size: 14px;
+					margin-bottom: 0;
+				}
+			}
+			.course-description::before{
+				top: 40px;
+			}
+		}
+
+	}
+	.my-projects-wrapper {
+		.projects-inner-container {
+			.project-description-container {
+				.project-description{
+					p{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.contact-form-wrapper {
+		.contact-form-container {
+			.form-box{
+				padding: 20px 23px;
+			}
+		}
+		.social-network-contacts {
+			.social-net-container{
+				h2{
+					font-size: 28px;
+				}
+				.title-border{
+					width: 55px;
+					left: 42%;
+				}
+			}
+		}
+		
+	}
+	
+
+}
 
 
 
