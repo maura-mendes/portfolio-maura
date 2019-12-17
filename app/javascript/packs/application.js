@@ -7,5 +7,5 @@ import "../components/level_bar"
 import "../components/typewriter"
 
 
-import { init  } from '../components/typewriter';
+// import { init  } from '../components/typewriter';
 // init ();
