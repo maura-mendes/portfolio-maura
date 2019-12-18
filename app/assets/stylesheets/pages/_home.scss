@@ -9,12 +9,14 @@
 		width: 43vw;
 		// display: flex;
 		// justify-content: space-around;
-		padding-left: 12%;
+		padding-left: 8%;
 		padding-right: 37px;
 		padding-top: 40px;
+
+
 		.banner-header{
 			h1{
-				
+				display: block;
 				font-style: normal;
 				font-weight: 600;
 				font-size: 38px;
@@ -22,15 +24,20 @@
 				color: #343B4C;
 				margin: 0;
 				margin-top: 100px;
+				letter-spacing: 3px;
+				animation-name: moveInLeft;
+				animation-duration: 1s;
+				animation-timing-function: ease-out;
 			}
 			p{
-				
+				display: block;
 				font-style: normal;
 				font-weight: 300;
 				font-size: 21px;
 				line-height: 36px;
 				color: rgba(52, 59, 76, 0.8);
 				margin-top: -8px;
+				animation: moveInRight 1s ease-out;
 			}
 		}
 		.social-network-icons{
@@ -45,9 +52,63 @@
 			    font-size: 1.1rem;
 			    line-height: 2.8rem;
 			    margin-right: 0.5rem;
+			    transition: all .2s;
+			}
+			.icon-animated{
+				animation: moveInButtom .5s ease-out .75s;
+				animation-fill-mode: backwards;
+			}
+			.icon-animated-1{
+				animation: moveInButtom .5s ease-out .85s;
+				animation-fill-mode: backwards;
+			}
+			.icon-animated-2{
+				animation: moveInButtom .5s ease-out .95s;
+				animation-fill-mode: backwards;
 			}
 		}
 		
+	}
+	// animation for banner header
+	@keyframes moveInLeft{
+		0%{
+			opacity: 0;
+			transform: translateX(-10rem)
+		}
+		80%{
+			transform: translateX(1rem)
+		}
+		100%{
+			opacity: 1;
+			transform: translate(0)
+		}
+	}
+	@keyframes moveInRight{
+		0%{
+			opacity: 0;
+			transform: translateX(10rem)
+		}
+		80%{
+			transform: translateX(-1rem)
+		}
+		100%{
+			opacity: 1;
+			transform: translate(0)
+		}
+	}
+
+
+	// buttom animation
+	@keyframes moveInButtom{
+		0%{
+			opacity: 0;
+			transform: translateY(10rem)
+		
+		}
+		100%{
+			opacity: 1;
+			transform: translate(0)
+		}
 	}
 	.banner-hero{
 		// background-image: image-url('share-container-hero-dsk2.png');
@@ -74,7 +135,7 @@
 		justify-content: space-around;
 		align-items: center;
 		.avatar{
-			background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) ), image-url('maura.jpg');
+			background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) ), image-url('profile-picture.jpg');
 			background-size: cover;
 			height: 200px;
 			width: 200px;
@@ -760,17 +821,32 @@
 }
 
 .wrapper-interests{
-	background: #008489;
+	// background: #008489;
+	background-image: linear-gradient( to right, rgba(0,0,0,0.55), rgba(0, 132, 137, 0.8)) , image-url('nature2.jpg');
+	background-position: top;
+	background-size: cover;
+	height: 35vh;
 	padding: 35px 0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	background-attachment: fixed;
 	h1{
 		color: white;
-		font-family: Saira;
+		font-family: Helvetica;
 		font-style: normal;
-		font-weight: 300;
-		font-size: 30px;
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	h2{
+		color: white;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 26px;
 		line-height: 30px;
 		text-align: center;
 	}
@@ -807,6 +883,9 @@
 			padding-top: 97px;
 			// position: absolute;
 			// bottom: 0;
+			animation-name: moveInLeft;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
 
 		}
 		p{
@@ -817,6 +896,7 @@
 			line-height: 25px;
 			color: rgba(52, 59, 76, 0.8);
 			margin: 0;
+			animation: moveInRight 1s ease-out;
 			// margin-top: -8px;
 		}
 		.social-network-icons-mob{
@@ -832,6 +912,65 @@
 			    font-size: 1.0rem;
 			    line-height: 2.2rem;
 			    margin-right: 0.5rem;
+			    transition: all .2s;
+			}
+			.icon-animated{
+				animation: moveInButtom .5s ease-out .75s;
+				animation-fill-mode: backwards;
+			}
+			.icon-animated-1{
+				animation: moveInButtom .5s ease-out .85s;
+				animation-fill-mode: backwards;
+			}
+			.icon-animated-2{
+				animation: moveInButtom .5s ease-out .95s;
+				animation-fill-mode: backwards;
+			}
+		}
+		// animation for banner header
+		@keyframes moveInLeft{
+			0%{
+				opacity: 0;
+				transform: translateX(-10rem)
+			}
+			80%{
+				transform: translateX(1rem)
+			}
+			100%{
+				opacity: 1;
+				transform: translate(0)
+			}
+		}
+		@keyframes moveInRight{
+			0%{
+				opacity: 0;
+				transform: translateX(10rem)
+			}
+			80%{
+				transform: translateX(-1rem)
+			}
+			100%{
+				opacity: 1;
+				transform: translate(0)
+			}
+		}
+
+
+		// buttom animation
+		@keyframes moveInButtom{
+			0%{
+				opacity: 0;
+				transform: translateY(10rem)
+			
+			}
+			50%{
+				opacity: 0;
+				transform: translateY(10rem)
+			
+			}
+			100%{
+				opacity: 1;
+				transform: translate(0)
 			}
 		}
 	}
@@ -1088,6 +1227,16 @@
 			}
 		} 
 	}
+	.wrapper-interests{
+		h1{
+			font-size: 20px;
+		}
+		h2{
+   			font-size: 18px;
+   			line-height: 21px;
+   			margin-top: -9px;
+		}
+	}
 
 }
 @media only screen 
@@ -1340,6 +1489,16 @@
 				}
 			}
 		} 
+	}
+	.wrapper-interests{
+		h1{
+			font-size: 20px;
+		}
+		h2{
+   			font-size: 19px;
+   			line-height: 21px;
+   			margin-top: -9px;
+		}
 	}
 }
 

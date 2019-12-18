@@ -2,7 +2,7 @@
 .navbar-wagon {
   // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: #273746;
-  transition: all 0.3s ease;
+  // transition: all 0.3s ease;
   height: 75px;
   padding: 0px 30px;
   display: flex;
@@ -132,6 +132,23 @@
 .language{
   margin-right: 37px;
   margin-bottom: 6px;
+}
+
+.btn-resume{
+  background: #FA5959;
+  border-radius: 4px;
+  padding: 5px 16px;
+  text-align: center;
+  color: white !important;
+  &:hover{
+    background: white;
+    text-decoration: none;
+    color: #353C4C !important;
+    }
+    &:visited{
+        color: #353C4C;
+        text-decoration: none currentcolor solid;
+  }
 }
 
 @media only screen 
